@@ -4,8 +4,8 @@ from models.message_request import MessageRequest
 from skills import add_skill
 
 
-@add_skill('{not_match}')
+@add_skill('{/Hello}')
 def get(message_request: MessageRequest):
     return [
-        TextSendMessage(text=f'You said: {message_request.message}')
+        TextSendMessage(text=f'You said: hello world')
     ]
