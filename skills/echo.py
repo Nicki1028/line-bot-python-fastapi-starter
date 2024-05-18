@@ -7,5 +7,5 @@ from skills import add_skill
 @add_skill('{/Hello}')
 def get(message_request: MessageRequest):
     return [
-        TextSendMessage(text=f'You said: hello world')
+        TextSendMessage(text='Hello World!')
     ]
